@@ -1,5 +1,5 @@
 {
-  "name": "demo-manager",
+  "name": "demo_manager",
   "license": "MIT",
   "classPath": "src",
   "tags": ["presentations"],
@@ -13,7 +13,6 @@
     "tink_macro":"",
     "thx.core":"",
     "browser-tools":"",
-    "async_tools":"",
+    "async_tools":""
   }
 }
-  
