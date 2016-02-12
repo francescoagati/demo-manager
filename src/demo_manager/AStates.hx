@@ -23,4 +23,11 @@ abstract AStates<T>(States<T>) from States<T> to States<T> {
 
     });
   }
+
+
+  @:op(A << B) public inline function push_state_from_function<T>(fn_state_init:State<T>->Void) {
+    this.push(new AState(fn_state_init));
+    return new AStates(this);
+  }
+
 }

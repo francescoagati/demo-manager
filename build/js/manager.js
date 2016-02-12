@@ -26,107 +26,86 @@ HxOverrides.remove = function(a,obj) {
 };
 var demo_$manager_Main = function() { };
 demo_$manager_Main.main = function() {
+	var states = [];
 	var tmp;
-	var this1;
-	var trigger = new tink_core_FutureTrigger();
-	this1 = { init : function(state) {
-		var _this = state.trigger;
-		if(_this.list == null) false; else {
-			var list = _this.list;
-			_this.list = null;
-			_this.result = 0;
-			tink_core__$Callback_CallbackList_$Impl_$.invoke(list,0);
-			tink_core__$Callback_CallbackList_$Impl_$.clear(list);
-			true;
-		}
-	}, trigger : trigger, end_state : trigger.future};
-	tmp = this1;
-	var tmp1;
-	var this2;
-	var trigger1 = new tink_core_FutureTrigger();
-	this2 = { init : function(state1) {
-		var _this1 = state1.trigger;
-		if(_this1.list == null) false; else {
-			var list1 = _this1.list;
-			_this1.list = null;
-			_this1.result = 1;
-			tink_core__$Callback_CallbackList_$Impl_$.invoke(list1,1);
-			tink_core__$Callback_CallbackList_$Impl_$.clear(list1);
-			true;
-		}
-	}, trigger : trigger1, end_state : trigger1.future};
-	tmp1 = this2;
 	var tmp2;
-	var this3;
+	var tmp4;
+	var tmp6;
+	var tmp8;
+	var this5;
+	var trigger = new tink_core_FutureTrigger();
+	this5 = { init : function(_) {
+		_.trigger.trigger(0);
+	}, trigger : trigger, end_state : trigger.future};
+	tmp8 = this5;
+	states.push(tmp8);
+	tmp6 = states;
+	var this4 = tmp6;
+	var tmp7;
+	var this6;
+	var trigger1 = new tink_core_FutureTrigger();
+	this6 = { init : function(_1) {
+		_1.trigger.trigger(1);
+	}, trigger : trigger1, end_state : trigger1.future};
+	tmp7 = this6;
+	this4.push(tmp7);
+	tmp4 = this4;
+	var this3 = tmp4;
+	var tmp5;
+	var this7;
 	var trigger2 = new tink_core_FutureTrigger();
-	this3 = { init : function(state2) {
-		var tmp5;
-		var __fn_tmp_11553620_2963952292_c7587386f7788617da06ab2e90713587 = function(__return) {
+	this7 = { init : function(_2) {
+		var tmp9;
+		var __fn_tmp_22690826_6566957645_2ee55e7eae7d7ff1d9e905aabdaeb7a7 = function(__return) {
 			setTimeout(function() {
-				var _this2 = state2.trigger;
-				if(_this2.list == null) false; else {
-					var list2 = _this2.list;
-					_this2.list = null;
-					_this2.result = 2;
-					tink_core__$Callback_CallbackList_$Impl_$.invoke(list2,2);
-					tink_core__$Callback_CallbackList_$Impl_$.clear(list2);
-					true;
-				}
+				_2.trigger.trigger(2);
 				__return();
 			},3000);
 		};
-		tmp5 = __fn_tmp_11553620_2963952292_c7587386f7788617da06ab2e90713587;
-		tmp5(function() {
+		tmp9 = __fn_tmp_22690826_6566957645_2ee55e7eae7d7ff1d9e905aabdaeb7a7;
+		tmp9(function() {
 		});
 	}, trigger : trigger2, end_state : trigger2.future};
+	tmp5 = this7;
+	this3.push(tmp5);
 	tmp2 = this3;
+	var this2 = tmp2;
 	var tmp3;
-	var this4;
+	var this8;
 	var trigger3 = new tink_core_FutureTrigger();
-	this4 = { init : function(state3) {
-		var _this3 = state3.trigger;
-		if(_this3.list == null) false; else {
-			var list3 = _this3.list;
-			_this3.list = null;
-			_this3.result = 3;
-			tink_core__$Callback_CallbackList_$Impl_$.invoke(list3,3);
-			tink_core__$Callback_CallbackList_$Impl_$.clear(list3);
-			true;
-		}
+	this8 = { init : function(_3) {
+		_3.trigger.trigger(3);
 	}, trigger : trigger3, end_state : trigger3.future};
-	tmp3 = this4;
-	var tmp4;
-	var this5;
+	tmp3 = this8;
+	this2.push(tmp3);
+	tmp = this2;
+	var this1 = tmp;
+	var tmp1;
+	var this9;
 	var trigger4 = new tink_core_FutureTrigger();
-	this5 = { init : function(state4) {
-		var _this4 = state4.trigger;
-		if(_this4.list == null) false; else {
-			var list4 = _this4.list;
-			_this4.list = null;
-			_this4.result = 4;
-			tink_core__$Callback_CallbackList_$Impl_$.invoke(list4,4);
-			tink_core__$Callback_CallbackList_$Impl_$.clear(list4);
-			true;
-		}
+	this9 = { init : function(_4) {
+		console.log("the end");
+		_4.trigger.trigger(4);
 	}, trigger : trigger4, end_state : trigger4.future};
-	tmp4 = this5;
-	var states = [tmp,tmp1,tmp2,tmp3,tmp4];
-	var cb = function(state5) {
-		console.log(state5);
+	tmp1 = this9;
+	this1.push(tmp1);
+	this1;
+	var cb = function(state) {
+		console.log(state);
 	};
 	var states_from = states.slice(2);
-	var tmp6;
-	var __fn_tmp_41886592_6050000861_c7587386f7788617da06ab2e90713587 = function(__return1) {
+	var tmp10;
+	var __fn_tmp_60335276_5289905071_2ee55e7eae7d7ff1d9e905aabdaeb7a7 = function(__return1) {
 		var __iterator = 0;
 		var __doCount = 0;
-		var tmp7;
+		var tmp11;
 		var __continue_01 = null;
 		__continue_01 = function() {
 			if(__iterator < states_from.length) {
 				if(__doCount++ == 0) while(true) {
-					var state6 = states_from[__iterator++];
-					state6;
-					state6.init(state6);
+					var state1 = states_from[__iterator++];
+					state1;
+					state1.init(state1);
 					var __afterVar_3 = [(function() {
 						return function(response) {
 							response;
@@ -142,7 +121,7 @@ demo_$manager_Main.main = function() {
 							} else __endIf_0();
 						};
 					})()];
-					state6.end_state((function(__afterVar_3) {
+					state1.end_state((function(__afterVar_3) {
 						return function(__parameter_4) {
 							__afterVar_3[0](__parameter_4);
 						};
@@ -151,12 +130,12 @@ demo_$manager_Main.main = function() {
 				}
 			} else __return1();
 		};
-		tmp7 = __continue_01;
-		var __continue_0 = tmp7;
+		tmp11 = __continue_01;
+		var __continue_0 = tmp11;
 		__continue_0();
 	};
-	tmp6 = __fn_tmp_41886592_6050000861_c7587386f7788617da06ab2e90713587;
-	tmp6(function() {
+	tmp10 = __fn_tmp_60335276_5289905071_2ee55e7eae7d7ff1d9e905aabdaeb7a7;
+	tmp10(function() {
 	});
 };
 var js__$Boot_HaxeError = function(val) {
@@ -232,6 +211,20 @@ var tink_core_FutureTrigger = function() {
 		} else tmp = tink_core__$Callback_CallbackList_$Impl_$.add(_g.list,callback);
 		return tmp;
 	});
+};
+tink_core_FutureTrigger.prototype = {
+	trigger: function(result) {
+		var tmp;
+		if(this.list == null) tmp = false; else {
+			var list = this.list;
+			this.list = null;
+			this.result = result;
+			tink_core__$Callback_CallbackList_$Impl_$.invoke(list,result);
+			tink_core__$Callback_CallbackList_$Impl_$.clear(list);
+			tmp = true;
+		}
+		return tmp;
+	}
 };
 if(Array.prototype.indexOf) HxOverrides.indexOf = function(a,o,i) {
 	return Array.prototype.indexOf.call(a,o,i);
