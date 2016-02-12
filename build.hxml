@@ -1,0 +1,6 @@
+-js build/js/manager.js
+-main demo_manager.Main
+-dce full
+-D analyzer
+-cp src
+-lib tink_core thx.core browser-tools async-tools

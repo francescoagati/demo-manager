@@ -1,0 +1,38 @@
+{
+  "dependencies": [
+    {
+      "name": "angular.haxe",
+      "type": "git",
+      "dir": "",
+      "ref": "master",
+      "url": "https://github.com/frabbit/angular.haxe.git"
+    },
+    {
+      "name": "browser-tools",
+      "type": "git",
+      "dir": "",
+      "ref": "master",
+      "url": "https://github.com/francescoagati/browser-tools.hx.git"
+    },
+    {
+      "name": "continuation",
+      "type": "haxelib",
+      "version": ""
+    },
+    {
+      "name": "thx.core",
+      "type": "haxelib",
+      "version": ""
+    },
+    {
+      "name": "tink_core",
+      "type": "haxelib",
+      "version": ""
+    },
+    {
+      "name": "tink_macro",
+      "type": "haxelib",
+      "version": ""
+    }
+  ]
+}
