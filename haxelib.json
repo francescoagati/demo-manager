@@ -1,0 +1,18 @@
+{
+  "name": "demo-manager",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["presentations"],
+  "description": "demo manager with states",
+  "contributors": ["francescoagati"],
+  "releasenote": "first release",
+  "version": "0.0.1",
+  "url": "https://github.com/francescoagati/demo_manager",
+  "dependencies": {
+    "continuation": "",
+    "tink_macro":"",
+    "thx.core":"",
+    "browser-tools":"",
+    "async-tools":"",
+  }
+}
