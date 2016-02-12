@@ -11,7 +11,6 @@
   "dependencies": {
     "continuation": "",
     "tink_macro":"",
-    "thx.core":"",
-    "browser-tools":""
+    "thx.core":""
   }
 }
